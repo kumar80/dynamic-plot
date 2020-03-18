@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+    <script src="uploader.js"></script>
+<head>
+    <script>
+        let graph = new Graph();
+         
+         window.onload = async ()=>{
+          try{
+              let up =  await graph.gettt()
+              document.getElementById('abc').innerHTML = up;
+              graph.plotRandom()
+              }
+          catch{
+              document.getElementById('abc').innerHTML = "error";
+              }
+        }
+  </script>
+<script type="text/javascript" src="canvasjs.min.js"></script>
+</head>
+<body>
+    <div id="abc">abcdefgh</div>
+    <div id="chartContainer1" style="height: 300px; width: 100%;">
+    <div id="chartContainer2" style="height: 300px; width: 100%;">
+	</div>
+</body>
+</html>
